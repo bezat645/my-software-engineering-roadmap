@@ -1,0 +1,183 @@
+
+<!-- ==========================================
+     MY ORIGINAL CODE (Saved for Reference)
+     ========================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Form</h1>
+        <nav>
+            <ul>
+                <li><a href="#personal-information">Personal Information</a></li>
+                <li><a href="#education-background">Education Background</a></li>
+                <li><a href="#additional-information">Additional Information</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <section id = "personal-information">
+                <h2>Personal Information</h2>
+                <ol>
+                    <li>write your full name below.</li> <br>
+                    <input type="text"  id = "full name" placeholder="Enter text here." required>
+                    <br>
+                    <br>
+                    <li>Date of birth</li>
+                    <br>
+                    <input type="date" id = "date">
+                    </br>
+                    <br>
+                    <li>Country of residence</li>
+                    <br>
+                    <input type="text"  id = "country" placeholder="Enter country here.">
+                    <br>
+                    <br>
+                    <li>Email Address</li>
+                    <br>
+                    <input type="email"  id = "email" placeholder="Email address here. " required>
+                </ol>
+            </section>
+            <section id = "education-background">
+                <h2>Education Background</h2>
+                <ul>
+                    <li>Name of higher education Institution </li>
+                    <br>
+                    <input type="text" id = "university"  placeholder="Enter name here">
+                    <br>
+                    <br>
+                    <li>Higher form of education</li>
+                    <br>
+                    <input type="text" id = "education level" placeholder="highschool,undergrad,masters.....">
+                    <br>
+                    <br>
+                    <li>Year of graduation</li>
+                    <br>
+                    <input type="date" name="graduation date" id="graduation">
+                </ul>
+            </section>
+            <section id = "additional-information"> 
+                <h2>Additional Information</h2>
+                <ul>
+                    <li>Name of emergency contact</li>
+                    <br>
+                    <input type="text" name="emergency-contact" id="emergency" placeholder="Enter full name " required>
+                    <br>
+                    <br>
+                    <li>Phone number  </li>
+                    <br>
+                    <input type="tel" placeholder="Enter telephone number" required>
+                </ul>
+                <br>
+                <input type="reset">
+                <input type="submit" >
+            </section>
+        </form>
+    </main>
+</body>
+</html>
+
+
+<!-- ==========================================
+     THE CORRECTED ACCESSIBLE CODE
+     ========================================== -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Form</h1>
+        <nav>
+            <ul>
+                <li><a href="#personal-information">Personal Information</a></li>
+                <li><a href="#education-background">Education Background</a></li>
+                <li><a href="#additional-information">Additional Information</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            
+            <fieldset id="personal-information">
+                <legend><h2>Personal Information</h2></legend>
+                <ul>
+                    <li>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="fullname" placeholder="Enter text here." required>
+                    </li>
+                    <li>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </li>
+                    <li>
+                        <label for="country">Country of Residence</label>
+                        <input type="text" id="country" name="country" placeholder="Enter country here.">
+                    </li>
+                    <li>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email address here." required>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset id="education-background">
+                <legend><h2>Education Background</h2></legend>
+                <ul>
+                    <li>
+                        <label for="university">Name of Higher Education Institution</label>
+                        <input type="text" id="university" name="university" placeholder="Enter name here">
+                    </li>
+                    <li>              ************The "select" tag  creates a dropdown option to choose from************
+                        <label for="education-level">Higher Form of Education</label>
+                        <select id="education-level" name="education_level">
+                            <option value="">-- Please choose an option --</option>
+                            <option value="high-school">High School</option>
+                            <option value="undergrad">Undergraduate</option>
+                            <option value="masters">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="graduation">Year of Graduation</label>
+                        <input type="date" id="graduation" name="graduation_date">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset id="additional-information"> 
+                <legend><h2>Additional Information</h2></legend>
+                <ul>
+                    <li>
+                        <label for="emergency">Name of Emergency Contact</label>
+                        <input type="text" id="emergency" name="emergency_contact" placeholder="Enter full name" required>
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone_number" placeholder="Enter telephone number" required>
+                    </li>
+                </ul>
+                
+                <div class="form-actions">
+                    <input type="reset" value="Reset Form">
+                    <button type="submit" >Submit Application</button> *********An <input> tag is self-closing, meaning its text can only be plain text inside a value attribute. A <button> tag has an opening and a closing tag, which means you can put other HTML tags inside it (like an icon, an image, or bold text)***************
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+</html> -->
